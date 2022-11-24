@@ -1,2 +1,3 @@
 com/quantcast/activecookie/CookieFilterImplTests.class
+com/quantcast/activecookie/CommandParserTests.class
 com/quantcast/activecookie/CsvParserTests.class

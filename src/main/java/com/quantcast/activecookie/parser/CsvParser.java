@@ -25,14 +25,6 @@ public class CsvParser {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CsvParser.class);
 
-    private static final String TYPE = "text/csv";
-    public static boolean hasCSVFormat(MultipartFile file) {
-        if (!TYPE.equals(file.getContentType())) {
-            return false;
-        }
-        return true;
-    }
-
     public static List<LogItem> csvToLogs(InputStream is) {
 
         try (BufferedReader fileReader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
