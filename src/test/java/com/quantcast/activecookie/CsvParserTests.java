@@ -1,15 +1,11 @@
 package com.quantcast.activecookie;
 
-import com.quantcast.activecookie.exception.ParsingException;
 import com.quantcast.activecookie.model.LogItem;
 import com.quantcast.activecookie.parser.CsvParser;
 import org.junit.jupiter.api.Test;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.time.format.DateTimeParseException;
 import java.util.List;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 

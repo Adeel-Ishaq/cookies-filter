@@ -1,22 +1,10 @@
 package com.quantcast.activecookie;
 
-import com.quantcast.activecookie.config.AppConfig;
 import com.quantcast.activecookie.exception.ParsingException;
-import com.quantcast.activecookie.filter.CookieFilterImpl;
-import com.quantcast.activecookie.model.CommandItem;
 import com.quantcast.activecookie.parser.CommandParser;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.io.ByteArrayOutputStream;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.PrintStream;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-
-import static java.time.LocalDate.parse;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 

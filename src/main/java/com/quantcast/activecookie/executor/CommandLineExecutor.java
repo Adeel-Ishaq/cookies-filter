@@ -23,11 +23,17 @@ class CommandLineExecutor implements CommandLineRunner {
     @Autowired
     private ApplicationContext applicationContext;
 
+
+    /**
+     *  Parse command input and pass it to filter function to find most active cookie
+     */
     @Override
     public void run(String... args) throws Exception {
         LOGGER.info("Program Started !!");
         try {
+            //Parse command line arguments to get file name and date options in CommandItem object
             CommandItem commandInput = CommandParser.parseCommandInput(args);
+
             cookieFilter.filterMostActiveCookies(commandInput);
             LOGGER.info("Program Succeed !!");
             exit(SpringApplication.exit(applicationContext));
